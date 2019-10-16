@@ -8,7 +8,7 @@ export default class Test extends React.Component{
     render=()=>{
         return(
             <Container>
-                <Text>testing</Text>
+                <Text>testing123</Text>
             </Container>
         )
     }

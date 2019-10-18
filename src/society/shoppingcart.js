@@ -3,8 +3,9 @@ import { View, Text, ScrollView,Image,TouchableOpacity,Linking,Platform } from "
 import {Container,Header,Title,Content,Footer,FooterTab} from 'native-base';
 //import { CheckBox } from 'react-native-elements'
 import CustomHeader from '../common/customHeader';
+import CustomFooter from '../common/customFooter';
 let styles=require('../../stylesheet/style');
-export default class Test extends React.Component{
+export default class Shoppingcart extends React.Component{
     static navigationOptions = {
         header:null
     }
@@ -164,15 +165,7 @@ export default class Test extends React.Component{
                         <Text style={styles.paybuttontext}>Pay</Text>
                     </TouchableOpacity>
                 </View>
-                <Footer >
-                    <FooterTab style={styles.footer}>
-                        <Image style={styles.footerimg} source={require('../../image/home-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/search-icon.png')}/>
-                        <Image style={styles.footerimg2} source={require('../../image/qrcode-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/cart-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/user-icon.png')}/>
-                    </FooterTab>
-                </Footer>
+                <CustomFooter {...this.props}/>
             </Container>
         )
     }

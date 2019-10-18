@@ -5,13 +5,23 @@ import { createStackNavigator } from 'react-navigation-stack'
 import Discovery from './src/society/discovery'
 import ShoppingCart from './src/society/shoppingcart'
 import News from './src/society/news'
+import Personalinfo from './src/society/personalinfo'
+import {joined,record} from './data/data'
+
+
 const Allpages = createStackNavigator({
   Discovery:Discovery,
   ShoppingCart:ShoppingCart,
-  News:News
+  News:News,
+  Personalinfo:Personalinfo
 },
 {
   initialRouteName:"News",
+  initialRouteParams:{
+    record: record,
+    joined: joined,
+  }
+
 });
 
 export default createAppContainer(Allpages);

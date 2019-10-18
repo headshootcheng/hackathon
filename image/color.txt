@@ -1,0 +1,3 @@
+red: #99242b
+dark grey: #656565
+light grey: #d3d3d3

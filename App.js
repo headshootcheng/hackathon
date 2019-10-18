@@ -7,6 +7,7 @@ import ShoppingCart from './src/society/shoppingcart'
 import News from './src/society/news'
 import Personalinfo from './src/society/personalinfo'
 import SocietyDetail from './src/society/societydetail'
+import PaymentCalendar from './src/society/paymentcalendar'
 import {joined,record} from './data/data'
 
 
@@ -15,7 +16,8 @@ const Allpages = createStackNavigator({
   ShoppingCart:ShoppingCart,
   News:News,
   Personalinfo:Personalinfo,
-  SocietyDetail:SocietyDetail
+  SocietyDetail:SocietyDetail,
+  PaymentCalendar:PaymentCalendar
 },
 {
   initialRouteName:"News",

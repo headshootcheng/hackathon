@@ -1,5 +1,6 @@
 import {StyleSheet,Dimensions} from 'react-native';
 module.exports = StyleSheet.create({
+    //login
     header:{
         backgroundColor:"white",
         width:"100%",

@@ -24,7 +24,7 @@ export default class Personalinfo extends React.Component{
                         <Text style={styles.personalname}>Chan Tai Ming</Text>
                         <Text style={styles.sid}>1155095123</Text>
                     </View>
-                    <View>
+                    <Content>
                         <TouchableOpacity style={styles.personaloptionrow}>
                             <Image style={styles.optionimg} source={require('../../image/member.png')}/>
                             <Text style={styles.optiontext}>Society Membership</Text>
@@ -59,8 +59,8 @@ export default class Personalinfo extends React.Component{
                             <Image style={styles.optionimg} source={require('../../image/hostel-icon.png')}/>
                             <Text style={styles.optiontext}>Accomodation Expense</Text>
                         </TouchableOpacity>
-                    </View>
-                    <Content/>
+                    </Content>
+                    
                 <CustomFooter {...this.props} view={this.state.view}/>
             </Container>
         )

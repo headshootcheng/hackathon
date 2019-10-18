@@ -14,6 +14,12 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleURLName</key>
+    <string>org.reactjs.native.example.Hackathon</string>
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>tapngo{4229708327s}</string>
+	</array>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

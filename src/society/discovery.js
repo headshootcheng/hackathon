@@ -3,6 +3,7 @@ import { View, Text, ScrollView,Image,TouchableOpacity,Linking,Platform,ImageBac
 import {Container,Header,Title,Content,Footer,FooterTab} from 'native-base';
 //import { CheckBox } from 'react-native-elements'
 import CustomHeader from '../common/customHeader';
+import { Actions } from 'react-native-router-flux';
 let styles=require('../../stylesheet/style');
 export default class Test extends React.Component{
     static navigationOptions = {

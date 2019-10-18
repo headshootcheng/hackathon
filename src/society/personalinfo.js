@@ -12,53 +12,56 @@ export default class Personalinfo extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            checked:false
+            view:3
         };
       }
     render=()=>{
         return(
             <Container >
                 <CustomHeader title="Personal Info" {...this.props}/>
-                <View style={styles.personalinfored}>
+                    <View style={styles.personaldetailarea}>
+                        <Image source={require('../../image/society-profile.png')} style={styles.personalicon}/>
+                        <Text style={styles.personalname}>Chan Tai Ming</Text>
+                        <Text style={styles.sid}>1155095123</Text>
+                    </View>
+                    <Content>
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/member.png')}/>
+                            <Text style={styles.optiontext}>Society Membership</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/pay-record.png')}/>
+                            <Text style={styles.optiontext}>Payment Record</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/booking.png')}/>
+                            <Text style={styles.optiontext}>Manage Venue Booking</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('PaymentCalendar');}}>
+                            <Image style={styles.optionimg} source={require('../../image/pay-calendar.png')}/>
+                            <Text style={styles.optiontext}>Payment Calendar</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/timetable.png')}/>
+                            <Text style={styles.optiontext}>Timetable Planner</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/college-icon.png')}/>
+                            <Text style={styles.optiontext}>Administration Fee</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.personaloptionrow}>
+                            <Image style={styles.optionimg} source={require('../../image/hostel-icon.png')}/>
+                            <Text style={styles.optiontext}>Accomodation Expense</Text>
+                        </TouchableOpacity>
+                    </Content>
                     
-                </View>
-                <Image source={require('../../image/society-profile.png')} style={styles.personaliconimg}/>
-                <View style={styles.personalinfowhite}>
-                    <Text style={styles.personinfotitle}>Students Union</Text>
-                    <Text style={styles.personinfotext}>A sncil, student government, free student union, ents' association, guild of students, or government of student body is a student organization present in many colleges, universities, and high schools.</Text>
-                </View>
-                <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginHorizontal:20}}>
-                    <TouchableHighlight style={styles.personinfotabactive}>
-                        <Text style={styles.personinfotabtextactive}>Event</Text>
-                    </TouchableHighlight>
-                    <TouchableHighlight style={styles.personinfotab}>
-                        <Text style={styles.personinfotabtext}>Post</Text>
-                    </TouchableHighlight>
-                </View>
-                <Content style={styles.content}>
-                    <ImageBackground style={styles.eachboxarea} source={require('../../image/event01.jpg')}> 
-                        <Text style={styles.boxtitle}>Orientation Night</Text>
-                        <View style={{marginTop:10,alignItems:"center",justifyContent:"center"}}>
-                            <Text style={styles.boxtext}>Student Union</Text>
-                            <Text style={styles.boxtext}>12/02/2019</Text>
-                        </View>                   
-                    </ImageBackground>
-                    <ImageBackground style={styles.eachboxarea} source={require('../../image/event02.jpg')}> 
-                        <Text style={styles.boxtitle}>Halloween Party</Text>
-                        <View style={{marginTop:10,alignItems:"center",justifyContent:"center"}}>
-                            <Text style={styles.boxtext}>Student Union</Text>
-                            <Text style={styles.boxtext}>12/02/2019</Text>
-                        </View>                   
-                    </ImageBackground>
-                    <ImageBackground style={styles.eachboxarea} source={require('../../image/event03.jpg')}> 
-                        <Text style={styles.boxtitle}>Cultural Exchange</Text>
-                        <View style={{marginTop:10,alignItems:"center",justifyContent:"center"}}>
-                            <Text style={styles.boxtext}>Student Union</Text>
-                            <Text style={styles.boxtext}>12/02/2019</Text>
-                        </View>                   
-                    </ImageBackground>
-                </Content>                   
-                <CustomFooter {...this.props}/>
+                <CustomFooter {...this.props} view={this.state.view}/>
             </Container>
         )
     }

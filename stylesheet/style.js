@@ -1,5 +1,6 @@
 import {StyleSheet,Dimensions} from 'react-native';
 module.exports = StyleSheet.create({
+    //login
     header:{
         backgroundColor:"white",
         width:"100%",
@@ -240,7 +241,50 @@ module.exports = StyleSheet.create({
         resizeMode:'contain',
     },
     //PersonalInfo
-    personalinfored:{
+    personaldetailarea:{
+        marginTop:20,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    personalname:{
+        fontSize:25,
+        fontWeight:'bold'
+    },
+    personalicon:{
+        height:160,
+        width:160,
+        resizeMode:'contain'
+    },
+  
+    sid:{
+        fontSize:18
+    },
+    personaloptionarea:{
+        marginTop:20,
+        marginHorizontal:20
+    },
+    personaloptionrow:{
+        flexDirection:'row',
+        marginTop:10,
+        alignItems:"center",
+        justifyContent:"flex-start",
+        marginHorizontal:20,
+        borderBottomWidth:1,
+        borderTopWidth:1,
+        borderColor:'#d3d3d3'
+    },
+    optionimg:{
+        height:40,
+        width:40,
+        resizeMode:'contain'
+    },
+    optiontext:{
+        fontSize:18,
+        color:'#99242b',
+        marginLeft:20
+    },
+    //SocietyDetail
+    societydetailred:{
         backgroundColor:"#99242b",
         height:100,
         alignItems:"center"
@@ -252,32 +296,32 @@ module.exports = StyleSheet.create({
         left:'31%',
         bottom:80,
     },
-    personalinfowhite:{
+    societydetailwhite:{
         backgroundColor:"white",
-        height:150,
+        height:180,
         alignItems:"center",
         //flexWrap:'wrap',
         //justifyContent:'flex-start'
     },
-    personinfotitle:{
+    societydetailtitle:{
         fontSize:25,
         fontWeight:'bold',
         bottom:50
     },
-    personinfotext:{
+    societydetailtext:{
         fontSize:18,
         //fontWeight:'bold',
         bottom:30,
         marginHorizontal:60
     },
-    personinfotab:{
+    societydetailtab:{
         height:50,
         width:150,
         //backgroundColor:'yellow',
         alignItems:"center",
         justifyContent:"center"
     },
-    personinfotabactive:{
+    societydetailtabactive:{
         height:50,
         width:150,
         //backgroundColor:'yellow',
@@ -286,11 +330,11 @@ module.exports = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center"
     },
-    personinfotabtext:{
+    societydetailtabtext:{
         fontSize:20,
         fontWeight:"bold"
     },
-    personinfotabtextactive:{
+    societydetailtabtextactive:{
         fontSize:20,
         fontWeight:"bold",
         color:'#99242b'
@@ -298,6 +342,12 @@ module.exports = StyleSheet.create({
     eachboxarea:{
         flex:1,
         height:120,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    eachboxarea2:{
+        flex:1,
+        height:150,
         alignItems:"center",
         justifyContent:"center"
     },

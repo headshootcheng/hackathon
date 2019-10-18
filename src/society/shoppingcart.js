@@ -12,7 +12,7 @@ export default class Shoppingcart extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            checked:false
+            view:2
         };
       }
     render=()=>{
@@ -165,7 +165,7 @@ export default class Shoppingcart extends React.Component{
                         <Text style={styles.paybuttontext}>Pay</Text>
                     </TouchableOpacity>
                 </View>
-                <CustomFooter {...this.props}/>
+                <CustomFooter {...this.props} view={this.state.view}/>
             </Container>
         )
     }

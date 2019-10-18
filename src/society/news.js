@@ -21,6 +21,7 @@ export default class News extends React.Component{
             currency:null,
             remark:"",
             notifyUrl:"",
+            view:0
         };
       }
       singlepayment(item){
@@ -129,7 +130,7 @@ export default class News extends React.Component{
                         {record}
                     </View>
                 </Content>
-                <CustomFooter {...this.props}/>
+                <CustomFooter {...this.props} view={this.state.view}/>
             </Container>
         )
     }

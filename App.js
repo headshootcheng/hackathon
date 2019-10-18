@@ -6,6 +6,7 @@ import Discovery from './src/society/discovery'
 import ShoppingCart from './src/society/shoppingcart'
 import News from './src/society/news'
 import Personalinfo from './src/society/personalinfo'
+import SocietyDetail from './src/society/societydetail'
 import {joined,record} from './data/data'
 
 
@@ -13,7 +14,8 @@ const Allpages = createStackNavigator({
   Discovery:Discovery,
   ShoppingCart:ShoppingCart,
   News:News,
-  Personalinfo:Personalinfo
+  Personalinfo:Personalinfo,
+  SocietyDetail:SocietyDetail
 },
 {
   initialRouteName:"News",

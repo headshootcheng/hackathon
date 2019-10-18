@@ -59,7 +59,7 @@ export default class Discovery extends React.Component{
                     
                     
                 </Content>
-                <CustomFooter/>
+                <CustomFooter {...this.props}/>
             </Container>
         )
     }

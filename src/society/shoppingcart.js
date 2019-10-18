@@ -165,7 +165,7 @@ export default class Shoppingcart extends React.Component{
                         <Text style={styles.paybuttontext}>Pay</Text>
                     </TouchableOpacity>
                 </View>
-                <CustomFooter/>
+                <CustomFooter {...this.props}/>
             </Container>
         )
     }

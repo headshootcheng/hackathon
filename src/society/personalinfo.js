@@ -58,7 +58,7 @@ export default class Personalinfo extends React.Component{
                         </View>                   
                     </ImageBackground>
                 </Content>                   
-                <CustomFooter/>
+                <CustomFooter {...this.props}/>
             </Container>
         )
     }

@@ -13,7 +13,7 @@ export default class News extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            checked:false
+            
         };
       }
       componentDidMount(){
@@ -66,7 +66,7 @@ export default class News extends React.Component{
                         {record}
                     </View>
                 </Content>
-                <CustomFooter/>
+                <CustomFooter {...this.props}/>
             </Container>
         )
     }

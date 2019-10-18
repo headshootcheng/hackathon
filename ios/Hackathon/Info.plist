@@ -15,7 +15,7 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleURLName</key>
-    <string>org.reactjs.native.example.Hackathon</string>
+	<string>org.reactjs.native.example.Hackathon</string>
 	<key>CFBundleURLSchemes</key>
 	<array>
 		<string>tapngo{4229708327s}</string>

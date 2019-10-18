@@ -238,7 +238,79 @@ module.exports = StyleSheet.create({
         height:30,
         width:30,
         resizeMode:'contain',
+    },
+    //PersonalInfo
+    personalinfored:{
+        backgroundColor:"#99242b",
+        height:100,
+        alignItems:"center"
+    },
+    personaliconimg:{
+        height:160,
+        width:160,
+        resizeMode:'contain',
+        left:'31%',
+        bottom:80,
+    },
+    personalinfowhite:{
+        backgroundColor:"white",
+        height:150,
+        alignItems:"center",
+        //flexWrap:'wrap',
+        //justifyContent:'flex-start'
+    },
+    personinfotitle:{
+        fontSize:25,
+        fontWeight:'bold',
+        bottom:50
+    },
+    personinfotext:{
+        fontSize:18,
+        //fontWeight:'bold',
+        bottom:30,
+        marginHorizontal:60
+    },
+    personinfotab:{
+        height:50,
+        width:150,
+        //backgroundColor:'yellow',
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    personinfotabactive:{
+        height:50,
+        width:150,
+        //backgroundColor:'yellow',
+        borderColor:"#99242b",
+        borderBottomWidth:3,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    personinfotabtext:{
+        fontSize:20,
+        fontWeight:"bold"
+    },
+    personinfotabtextactive:{
+        fontSize:20,
+        fontWeight:"bold",
+        color:'#99242b'
+    },
+    eachboxarea:{
+        flex:1,
+        height:120,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    boxtitle:{
+        fontSize:20,
+        fontWeight:"bold",
+        color:"white"
+    },
+    boxtext:{
+        fontSize:16,
+        color:"white"
     }
+
 });
 
 

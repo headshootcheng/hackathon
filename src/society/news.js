@@ -80,6 +80,19 @@ export default class News extends React.Component{
               
               }))
             shoppingcart.push(item)
+        }else{
+            this.setState(prevState => ({
+
+                records: prevState.records.map(
+                  el => el._id === item._id? { ...el, selected: false }: el
+                )
+              
+              }))
+              for(var i=0;i<shoppingcart.length;i++){
+                  if(item._id==shoppingcart[i]._id){
+                    shoppingcart.splice(i,1)
+                  }
+              }
         }
       }
       componentDidMount(){

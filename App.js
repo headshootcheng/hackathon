@@ -2,12 +2,14 @@ import React,{Component} from "react";
 import { View, Text } from "react-native";
 import { createAppContainer  } from "react-navigation";
 import { createStackNavigator } from 'react-navigation-stack'
-import Test from './src/test'
+import Discovery from './src/discovery'
+import ShoppingCart from './src/shoppingcart'
 const Allpages = createStackNavigator({
-  Test:Test
+  Discovery:Discovery,
+  ShoppingCart:ShoppingCart
 },
 {
-  initialRouteName:"Test",
+  initialRouteName:"Discovery",
 });
 
 export default createAppContainer(Allpages);

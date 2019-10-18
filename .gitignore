@@ -57,3 +57,10 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+android/app/src/main/assets/fonts/rubicon-icon-font.ttf
+android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf
+android/app/src/main/assets/fonts/Roboto.ttf
+android/app/src/main/assets/fonts/Roboto_medium.ttf
+android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf
+ios/Hackathon/Info.plist
+ios/Hackathon.xcodeproj/project.pbxproj

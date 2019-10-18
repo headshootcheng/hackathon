@@ -40,7 +40,7 @@ export default class Personalinfo extends React.Component{
                             <Text style={styles.optiontext}>Manage Venue Booking</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.personaloptionrow}>
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('PaymentCalendar');}}>
                             <Image style={styles.optionimg} source={require('../../image/pay-calendar.png')}/>
                             <Text style={styles.optiontext}>Payment Calendar</Text>
                         </TouchableOpacity>

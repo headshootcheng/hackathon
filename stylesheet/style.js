@@ -169,6 +169,76 @@ module.exports = StyleSheet.create({
         fontSize:18,
         color:'white'
     },
+    //news
+    featureeventarea:{
+        flex:1,
+        backgroundColor:"white",
+        paddingHorizontal:0
+    },
+    featureeventareatext:{
+        fontSize:18,
+        marginTop:5,
+        marginHorizontal:20
+    },
+    featureeventareaview:{
+        marginVertical:10
+    },
+    eachfeatureeventarea:{
+        height:200,
+        width:150,
+        marginHorizontal:5,
+        resizeMode:'contain',
+        borderRadius:30,
+        overflow:'hidden',
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    eachfeatureeventtext:{
+        color:'white',
+        fontSize:18
+    },
+    eachfeatureeventtext2:{
+        color:'white',
+        fontSize:14
+    },
+    recenteventarea:{
+        flex:1,
+        backgroundColor:"white",
+        paddingHorizontal:0
+    },
+    recenteventareatext:{
+        fontSize:18,
+        marginTop:5,
+        marginHorizontal:20
+    },
+    eachrecenteventarea:{
+        flex:1,
+        height:150,
+        resizeMode:'contain',
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    eachrecenteventtext:{
+        color:'white',
+        fontSize:18,
+        fontWeight:"bold"
+    },
+    eachrecenteventtext2:{
+        color:'white',
+        fontSize:14
+    },
+    eachrecenteventdetail:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between',
+        marginHorizontal: 20,
+        height:100
+    },
+    addcartimg:{
+        height:30,
+        width:30,
+        resizeMode:'contain',
+    }
 });
 
 

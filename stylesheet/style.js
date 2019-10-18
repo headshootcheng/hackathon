@@ -150,6 +150,25 @@ module.exports = StyleSheet.create({
         alignItems:'center',
         paddingHorizontal:10
     },
+    eventarea:{
+        marginTop:5,
+        flex:1,
+        height:150,
+        backgroundColor:'white',
+        alignItems:'center',
+        justifyContent:"center",
+        paddingHorizontal:10,
+        resizeMode:'contain'
+    },
+    eventareatitle:{
+        fontWeight:'bold',
+        fontSize:25,
+        color:'white'
+    },
+    eventareatext:{
+        fontSize:18,
+        color:'white'
+    },
 });
 
 

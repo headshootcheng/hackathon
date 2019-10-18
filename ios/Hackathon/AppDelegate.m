@@ -10,6 +10,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <tapngosdk/TGSDKAppDelegate.h>
 
 @implementation AppDelegate
 
@@ -28,6 +29,15 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+  [[TGSDKAppDelegate sharedInstance] application:application handleOpenURL:url];
+  return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString
+*, id> *)options {
+[[TGSDKAppDelegate sharedInstance] application:app handleOpenURL:url]; return YES;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

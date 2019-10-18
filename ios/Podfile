@@ -36,6 +36,10 @@ target 'Hackathon' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'AFNetworking' , '~> 3.0'
+  pod 'AFXMLDictionarySerializer'
+  pod 'CocoaLumberjack'
+
   target 'HackathonTests' do
     inherit! :search_paths
     # Pods for testing

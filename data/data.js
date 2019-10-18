@@ -1,72 +1,80 @@
 export const joined=[
-    {
-      "_id": 6,
-      
-      "Host": "豁 - 國際經濟學商學學生會理大分會 AIESEC",
-      "Category": "Event",
-      "Nature": "Public",
-      "Registration": "",
-      "Product": "AIESEC Members Recruitment",
-      "Period": "28/08/2018-09/09/2018",
-      "Price": "",
-      "Quota (if applicable)": null
-    },
-    {
-      "_id": 7,
-      "Host": "文 - 基督徒詩班 Christian Choir",
-      "Category": "Event",
-      "Nature": "Public",
-      "Registration": "",
-      "Product": "迎新資訊日",
-      "Period": "31/08/2018",
-      "Price": "",
-      "Quota (if applicable)": null
-    },
+  {
+    "_id": 174,
+    "Host": "體 - 詠春學會 Wing Chun",
+    "Category": "Event",
+    "Nature": "Public",
+    "Registration": "Yes",
+    "Product": "迎新夜",
+    "Period": "21/09/2018",
+    "Price": "HK$150.00",
+    "Quota (if applicable)": 100,
+    "rank": 0.0573088
+  },
+  {
+    "_id": 175,
+    "Host": "文 - 基督徒詩班 Christian Choir",
+    "Category": "Event",
+    "Nature": "Public",
+    "Registration": "Yes",
+    "Product": "迎新夜",
+    "Period": "03/10/2018",
+    "Price": "HK$250.00",
+    "Quota (if applicable)": 100,
+    "rank": 0.0573088
+  },
+  ]
+  export const shoppingcart= [
+
   ]
   export const record= [
     {
-      "_id": 2,
-      "Host": "藝 - 戲劇社 Drama",
+      "_id": 116,
+      "Host": "體 - 排球學會  Volley",
       "Category": "Event",
-      "Nature": "Internal",
-      "Registration": "",
-      "Product": "Summer Night 2018 Evaluation 仲夏之夜二零一八檢討會",
-      "Period": "15/08/2018",
-      "Price": "",
-      "Quota (if applicable)": null
-    },
-    {
-      "_id": 3,
-      "Host": "藝 - 戲劇社 Drama",
-      "Category": "Event",
-      "Nature": "Internal",
-      "Registration": "",
-      "Product": "Theatre Night 2018 Rehearsal",
-      "Period": "04/09/2018, 23/09/2018",
-      "Price": "",
-      "Quota (if applicable)": null
-    },
-    {
-      "_id": 4,
-      "Host": "藝 - 戲劇社 Drama",
-      "Category": "Event",
-      "Nature": "Internal",
-      "Registration": "",
-      "Product": "Theatre Night 2018 Evaluation",
+      "Nature": "Public",
+      "Registration": "Yes",
+      "Product": "pre-orientation camp",
       "Period": "28/09/2018",
-      "Price": "",
-      "Quota (if applicable)": null
+      "Price": "HK$200.00",
+      "Quota (if applicable)": 100,
+      "rank": 0.0573088
     },
     {
-      "_id": 5,
-      "Host": "藝 - 合唱團 Choir",
-      "Category": "Recurring Activity",
-      "Nature": "Internal",
-      "Registration": "",
-      "Product": "General Practice",
-      "Period": "26/08/2018-30/06/2019",
-      "Price": "",
-      "Quota (if applicable)": null
+      "_id": 117,
+      "Host": "體 - 排球學會  Volley",
+      "Category": "Event",
+      "Nature": "Public",
+      "Registration": "Yes",
+      "Product": "orientation camp",
+      "Period": "06/10/2018-07/10/2018",
+      "Price": "HK$500.00",
+      "Quota (if applicable)": 100,
+      "rank": 0.0573088
+    },
+    {
+      "_id": 118,
+      "Host": "體 - 排球學會  Volley",
+      "Category": "Event",
+      "Nature": "Public",
+      "Registration": "Yes",
+      "Product": "orientation night",
+      "Period": "08/10/2018",
+      "Price": "HK$150.00",
+      "Quota (if applicable)": 100,
+      "rank": 0.0573088
+    },
+    {
+      "_id": 131,
+      "Host": "藝 - 音樂學會 Muso",
+      "Category": "Event",
+      "Nature": "Public",
+      "Registration": "Yes",
+      "Product": "Orientation Night",
+      "Period": "28/09/2018",
+      "Price": "HK$100.00",
+      "Quota (if applicable)": 100,
+      "rank": 0.0573088
     },
   ]
   export const API = {

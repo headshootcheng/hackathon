@@ -6,7 +6,7 @@ import CustomHeader from '../common/customHeader';
 import CustomFooter from '../common/customFooter';
 import { Actions } from 'react-native-router-flux';
 import {RNTapNGoSDK, TapNGoSDK} from './RNTapNGoSDKClass';
-import {API} from '../../data/data'
+import {API,shoppingcart,joined,record} from '../../data/data'
 let styles=require('../../stylesheet/style');
 var subscription;
 export default class News extends React.Component{
@@ -16,11 +16,7 @@ export default class News extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            merTradeNo:"TEST20191019",
-            price:null,
-            currency:null,
-            remark:"",
-            notifyUrl:"",
+            records:record,
             view:0
         };
       }
@@ -54,7 +50,7 @@ export default class News extends React.Component{
         //           'Authorization': 'Bearer 72eebdaeb9b302ac55dd9a36d73b6ba0',
         //         }})
         let response = await fetch(
-            'https://facebook.github.io/react-native/movies.json'
+            'http://facebook.github.io/react-native/movies.json'
             )
           let responseJson = await response.json();
           return responseJson;
@@ -67,6 +63,24 @@ export default class News extends React.Component{
         .then(
             (response) => console.log(response)
         )
+      }
+      addincart(item,index){
+          let exist = false
+          console.log(index)
+        for(let i=0;i<shoppingcart.length;i++){
+            if(shoppingcart[i]._id == item._id)
+            exist=true
+        }
+        if(!exist){
+            this.setState(prevState => ({
+
+                records: prevState.records.map(
+                  el => el._id === item._id? { ...el, selected: true }: el
+                )
+              
+              }))
+            shoppingcart.push(item)
+        }
       }
       componentDidMount(){
        const paymentResultEmitter = new NativeEventEmitter(TapNGoSDK);
@@ -95,8 +109,8 @@ export default class News extends React.Component{
                 </ImageBackground>
                 </TouchableOpacity>)
         });
-        var record_raw = state.params.record
-        var record = record_raw.map(function(item) {
+        var record_raw = this.state.records
+        var record = record_raw.map(function(item,index) {
             return (<View style={{marginVertical:5}}>
                 <ImageBackground source={require('../../image/event01.jpg')} style={styles.eachrecenteventarea}>
                     <Text style={styles.eachrecenteventtext}>{item.Product}</Text>
@@ -110,7 +124,11 @@ export default class News extends React.Component{
                         <Text>Venue: Sports Center</Text>
                         <Text>Time: 1:00PM - 3:00PM</Text>
                     </View>
-                    <Image style={styles.addcartimg} source={require('../../image/add-cart.png')}/>
+                    <TouchableOpacity  onPress={()=>{react.addincart(item,index)}} >
+                        {item.selected?
+                        <Image style={styles.addcartimg} source={require('../../image/cart-icon-grey.png')}/>:
+                        <Image style={styles.addcartimg} source={require('../../image/add-cart.png')}/>}
+                    </TouchableOpacity>
                 </View>
             </View>)
         });

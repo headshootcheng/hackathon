@@ -64,3 +64,5 @@ android/app/src/main/assets/fonts/Roboto_medium.ttf
 android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf
 ios/Hackathon/Info.plist
 ios/Hackathon.xcodeproj/project.pbxproj
+package.json
+package-lock.json

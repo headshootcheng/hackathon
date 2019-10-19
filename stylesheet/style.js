@@ -1,5 +1,37 @@
 import {StyleSheet,Dimensions} from 'react-native';
 module.exports = StyleSheet.create({
+    //login
+    loginarea:{
+        backgroundColor:'#99242b',
+        flex:1,
+        //height:'100%'
+        alignItems:"center"
+    },
+    loginimg:{
+        resizeMode:'contain',
+        height:350,
+        width:350
+    },
+    logininput:{
+        marginVertical:10,
+        height:50,
+        width:350,
+        backgroundColor:'grey'
+    },
+    loginbutton:{
+       backgroundColor:'blue' ,
+       alignItems:"center",
+       justifyContent:"center",
+       width:350,
+       height:80,
+       marginTop:50,
+       borderRadius:10
+    },
+    loginbuttontext:{
+        fontSize:20,
+        color:'white',
+        fontWeight:'bold'
+    },
     header:{
         backgroundColor:"white",
         width:"100%",
@@ -238,7 +270,128 @@ module.exports = StyleSheet.create({
         height:30,
         width:30,
         resizeMode:'contain',
+    },
+    //PersonalInfo
+    personaldetailarea:{
+        marginTop:20,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    personalname:{
+        fontSize:25,
+        fontWeight:'bold'
+    },
+    personalicon:{
+        height:160,
+        width:160,
+        resizeMode:'contain'
+    },
+  
+    sid:{
+        fontSize:18
+    },
+    personaloptionarea:{
+        marginTop:20,
+        marginHorizontal:20
+    },
+    personaloptionrow:{
+        flexDirection:'row',
+        marginTop:10,
+        alignItems:"center",
+        justifyContent:"flex-start",
+        marginHorizontal:20,
+        borderBottomWidth:1,
+        borderTopWidth:1,
+        borderColor:'#d3d3d3'
+    },
+    optionimg:{
+        height:40,
+        width:40,
+        resizeMode:'contain'
+    },
+    optiontext:{
+        fontSize:18,
+        color:'#99242b',
+        marginLeft:20
+    },
+    //SocietyDetail
+    societydetailred:{
+        backgroundColor:"#99242b",
+        height:100,
+        alignItems:"center"
+    },
+    personaliconimg:{
+        height:160,
+        width:160,
+        resizeMode:'contain',
+        left:'31%',
+        bottom:80,
+    },
+    societydetailwhite:{
+        backgroundColor:"white",
+        height:180,
+        alignItems:"center",
+        //flexWrap:'wrap',
+        //justifyContent:'flex-start'
+    },
+    societydetailtitle:{
+        fontSize:25,
+        fontWeight:'bold',
+        bottom:50
+    },
+    societydetailtext:{
+        fontSize:18,
+        //fontWeight:'bold',
+        bottom:30,
+        marginHorizontal:60
+    },
+    societydetailtab:{
+        height:50,
+        width:150,
+        //backgroundColor:'yellow',
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    societydetailtabactive:{
+        height:50,
+        width:150,
+        //backgroundColor:'yellow',
+        borderColor:"#99242b",
+        borderBottomWidth:3,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    societydetailtabtext:{
+        fontSize:20,
+        fontWeight:"bold"
+    },
+    societydetailtabtextactive:{
+        fontSize:20,
+        fontWeight:"bold",
+        color:'#99242b'
+    },
+    eachboxarea:{
+        flex:1,
+        height:120,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    eachboxarea2:{
+        flex:1,
+        height:150,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    boxtitle:{
+        fontSize:20,
+        fontWeight:"bold",
+        color:"white"
+    },
+    boxtext:{
+        fontSize:16,
+        color:"white"
     }
+
 });
 
 

@@ -3,16 +3,18 @@ import { View, Text, ScrollView,Image,TouchableOpacity,Linking,Platform,ImageBac
 import {Container,Header,Title,Content,Footer,FooterTab} from 'native-base';
 //import { CheckBox } from 'react-native-elements'
 import CustomHeader from '../common/customHeader';
+import CustomFooter from '../common/customFooter';
 import { Actions } from 'react-native-router-flux';
 let styles=require('../../stylesheet/style');
-export default class Test extends React.Component{
+import {joined,record} from '../../data/data'
+export default class Discovery extends React.Component{
     static navigationOptions = {
         header:null
     }
     constructor(props) {
         super(props);
         this.state = {
-            checked:false
+            view:1
         };
       }
     render=()=>{
@@ -27,19 +29,22 @@ export default class Test extends React.Component{
                 </View>
                 <Content style={[styles.content,{paddingVertical:10}]}>
                     <View>
-                        <View style={styles.societyarea}>
+                        <TouchableOpacity style={styles.societyarea} onPress={()=>{ this.props.navigation.navigate('SocietyDetail',{
+                            record: record,
+                            joined: joined,
+                        });}}>
                                 <Image style={styles.shoppingphotoimg} source={require('../../image/defaultphoto.jpg')}/>
                                 <View style={styles.shoppingareadetail}>
                                     
                                         <Text style={styles.shoppingareadetailtext2}>
-                                            Society Name
+                                            Student Union
                                         </Text>
                                     <Text style={styles.shoppingareadetailtext}>
                                         Description
                                     </Text>
                                 </View>
                             
-                        </View>
+                        </TouchableOpacity>
                         <ImageBackground source={require('../../image/event01.jpg')} style={styles.eventarea}>
                             <Text style={styles.eventareatitle}>Event Name</Text>
                             <View style={{marginTop:20,alignItems:"center"}}>
@@ -58,15 +63,7 @@ export default class Test extends React.Component{
                     
                     
                 </Content>
-                <Footer >
-                    <FooterTab style={styles.footer}>
-                        <Image style={styles.footerimg} source={require('../../image/home-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/search-icon.png')}/>
-                        <Image style={styles.footerimg2} source={require('../../image/qrcode-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/cart-icon.png')}/>
-                        <Image style={styles.footerimg} source={require('../../image/user-icon.png')}/>
-                    </FooterTab>
-                </Footer>
+                <CustomFooter {...this.props} view={this.state.view}/>
             </Container>
         )
     }

@@ -13,7 +13,7 @@ export default class Member extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            view:2
+            view:3
         };
     }
     render=()=>{

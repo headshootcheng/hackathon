@@ -25,7 +25,7 @@ export default class Personalinfo extends React.Component{
                         <Text style={styles.sid}>1155095123</Text>
                     </View>
                     <Content>
-                        <TouchableOpacity style={styles.personaloptionrow}>
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('Member');}}>
                             <Image style={styles.optionimg} source={require('../../image/member.png')}/>
                             <Text style={styles.optiontext}>Society Membership</Text>
                         </TouchableOpacity>

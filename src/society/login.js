@@ -30,6 +30,12 @@ export default class Login extends React.Component{
            });}}>
                     <Text style={styles.loginbuttontext}>Login</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={[styles.loginbutton,{marginTop:20}]} onPress={()=>{ this.props.navigation.navigate('News',{
+                record: record,
+                joined: joined,
+           });}}>
+                    <Text style={styles.loginbuttontext}>Sign Up</Text>
+                </TouchableOpacity>
                 {/*<Dropdown
                     label='Selected University'
                     data={data}

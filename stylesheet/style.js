@@ -1,6 +1,37 @@
 import {StyleSheet,Dimensions} from 'react-native';
 module.exports = StyleSheet.create({
     //login
+    loginarea:{
+        backgroundColor:'#99242b',
+        flex:1,
+        //height:'100%'
+        alignItems:"center"
+    },
+    loginimg:{
+        resizeMode:'contain',
+        height:350,
+        width:350
+    },
+    logininput:{
+        marginVertical:10,
+        height:50,
+        width:350,
+        backgroundColor:'grey'
+    },
+    loginbutton:{
+       backgroundColor:'blue' ,
+       alignItems:"center",
+       justifyContent:"center",
+       width:350,
+       height:80,
+       marginTop:50,
+       borderRadius:10
+    },
+    loginbuttontext:{
+        fontSize:20,
+        color:'white',
+        fontWeight:'bold'
+    },
     header:{
         backgroundColor:"white",
         width:"100%",

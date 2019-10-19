@@ -18,10 +18,11 @@ const Allpages = createStackNavigator({
   News:News,
   Personalinfo:Personalinfo,
   SocietyDetail:SocietyDetail,
-  PaymentCalendar:PaymentCalendar
+  PaymentCalendar:PaymentCalendar,
+  Login
 },
 {
-  initialRouteName:"News",
+  initialRouteName:"Login",
   initialRouteParams:{
     record: record,
     joined: joined,

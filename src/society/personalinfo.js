@@ -35,7 +35,7 @@ export default class Personalinfo extends React.Component{
                             <Text style={styles.optiontext}>Payment Record</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.personaloptionrow}>
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('Booking');}}>
                             <Image style={styles.optionimg} source={require('../../image/booking.png')}/>
                             <Text style={styles.optiontext}>Manage Venue Booking</Text>
                         </TouchableOpacity>
@@ -45,7 +45,7 @@ export default class Personalinfo extends React.Component{
                             <Text style={styles.optiontext}>Payment Calendar</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.personaloptionrow}>
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('Timetable')}}>
                             <Image style={styles.optionimg} source={require('../../image/timetable.png')}/>
                             <Text style={styles.optiontext}>Timetable Planner</Text>
                         </TouchableOpacity>
@@ -55,7 +55,7 @@ export default class Personalinfo extends React.Component{
                             <Text style={styles.optiontext}>Administration Fee</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.personaloptionrow}>
+                        <TouchableOpacity style={styles.personaloptionrow} onPress={()=>{this.props.navigation.navigate('Accomodation');}}>
                             <Image style={styles.optionimg} source={require('../../image/hostel-icon.png')}/>
                             <Text style={styles.optiontext}>Accomodation Expense</Text>
                         </TouchableOpacity>

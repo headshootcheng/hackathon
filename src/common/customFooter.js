@@ -46,7 +46,7 @@ export default class customHeader extends Component{
                         <TouchableOpacity onPress={gotoview2}>
                         <Image style={styles.footerimg} source={view==1?require('../../image/search-icon.png'):require('../../image/search-icon-grey.png')}/>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={()=>this.props.navigation.navigate('QRCode')}>
                             <Image style={styles.footerimg2} source={require('../../image/qrcode-icon.png')}/>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={gotoview3}>

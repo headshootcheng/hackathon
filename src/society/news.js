@@ -41,19 +41,14 @@ export default class News extends React.Component{
       }
       async getMoviesFromApi() {
         try {
-        //   let response = await fetch(
-        //     'https://datastudio-api.hkstp.org:443/CPhackathon2019/v1.0.0/datastore_search?resource_id=dabe12a3-875d-47d2-b11b-294c1311bffc'
-        //     ,{
-        //         method: 'GET',
-        //         headers: {
-        //           Accept: 'application/json',
-        //           'Authorization': 'Bearer 72eebdaeb9b302ac55dd9a36d73b6ba0',
-        //         }})
-        let response = await fetch(
-            'http://facebook.github.io/react-native/movies.json'
-            )
-          let responseJson = await response.json();
-          return responseJson;
+          let response = await fetch(
+            'https://datastudio-api.hkstp.org:443/CPhackathon2019/v1.0.0/datastore_search?resource_id=dabe12a3-875d-47d2-b11b-294c1311bffc'
+            ,{
+                method: 'GET',
+                headers: {
+                  Accept: 'application/json',
+                  'Authorization': 'Bearer 72eebdaeb9b302ac55dd9a36d73b6ba0',
+                }})
         } catch (error) {
           console.error(error);
         }
@@ -62,7 +57,7 @@ export default class News extends React.Component{
         this.getMoviesFromApi()
         .then(
             (response) => console.log(response)
-        )
+        ).catch(error => console.log(error))
       }
       addincart(item,index){
           let exist = false
@@ -111,8 +106,8 @@ export default class News extends React.Component{
         var joined_raw = state.params.joined
         var react = this
         var joined = joined_raw.map(function(item) {
-            // return (<TouchableOpacity  onPress={()=>{react.singlepayment(item)}} >
-            return (<TouchableOpacity  onPress={()=>{react.getdata()}} >
+             return (<TouchableOpacity  onPress={()=>{react.singlepayment(item)}} >
+            {/* return (<TouchableOpacity  onPress={()=>{react.getdata()}} > */}
            <ImageBackground source={require('../../image/featured-event02.jpg')} style={styles.eachfeatureeventarea}>
                     <Text style={styles.eachfeatureeventtext}>{item.Product}</Text>
                     <View style={{marginTop:20,alignItems:"center",justifyContent:"center"}}>

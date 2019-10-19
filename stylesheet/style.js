@@ -391,6 +391,7 @@ module.exports = StyleSheet.create({
         fontSize:16,
         color:"white"
     },
+    //QRCode
     qrcodearea:{
         height:'100%',
         flex:1,
@@ -404,10 +405,77 @@ module.exports = StyleSheet.create({
         resizeMode:"contain"
     },
     qrcodetext:{
+        marginTop:10,
         fontSize:18,
         color:'white'
-    }
-
+    },
+    closeimg:{
+        height:80,
+        width:80,
+        //top:80,
+        resizeMode:"contain"
+    },
+    //Timetable
+    timetableimg:{
+        height:600,
+        right:60,
+        resizeMode:'contain'
+    },
+    //Accomodation Expense
+    eachexpensebox:{
+        backgroundColor:'white',
+        alignItems:"center",
+        height:300,
+        flex:1,
+        borderWidth:1,
+        borderColor:'#d3d3d3'
+    },
+    expenseimg:{
+        marginTop:40,
+        height:150,
+        width:150,
+        resizeMode:'contain'
+    },
+    expensetext:{
+        fontSize:25,
+        fontWeight:'bold',
+        marginTop:20
+    },
+    //Booking Room
+    bookingbox:{
+        marginTop:10,
+        width:'90%',
+        height:200,
+        marginHorizontal:20
+    },
+    bookingboxtop:{
+        height:50,
+        backgroundColor:'#c5c5c6',
+        borderTopEndRadius:10,
+        borderTopStartRadius:10,
+        justifyContent:"center",
+        paddingHorizontal:10,
+    },
+    bookingtoptext:{
+        fontSize:12,   
+    },
+    bookingboxbottom:{
+        height:150,
+        backgroundColor:'#adadae',
+        borderBottomEndRadius:10,
+        borderBottomStartRadius:10,
+        justifyContent:"center",
+        paddingHorizontal:20,
+    },
+    bookingboxbottomrow:{
+        flexDirection:'row',
+        justifyContent:"space-between",
+        alignItems:'center'
+    },
+    booktext1:{
+        fontSize:20,
+        fontWeight:"bold"
+    },
 });
 
 

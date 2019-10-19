@@ -390,6 +390,22 @@ module.exports = StyleSheet.create({
     boxtext:{
         fontSize:16,
         color:"white"
+    },
+    qrcodearea:{
+        height:'100%',
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center",
+        backgroundColor:"#99242b"
+    },
+    qrcodeimg:{
+        height:200,
+        width:200,
+        resizeMode:"contain"
+    },
+    qrcodetext:{
+        fontSize:18,
+        color:'white'
     }
 
 });

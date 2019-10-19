@@ -9,6 +9,7 @@ import News from './src/society/news'
 import Personalinfo from './src/society/personalinfo'
 import SocietyDetail from './src/society/societydetail'
 import PaymentCalendar from './src/society/paymentcalendar'
+import QRCode from './src/society/qrcode'
 import {joined,record} from './data/data'
 
 
@@ -19,10 +20,11 @@ const Allpages = createStackNavigator({
   Personalinfo:Personalinfo,
   SocietyDetail:SocietyDetail,
   PaymentCalendar:PaymentCalendar,
-  Login
+  Login:Login,
+  QRCode:QRCode
 },
 {
-  initialRouteName:"Login",
+  initialRouteName:"QRCode",
   initialRouteParams:{
     record: record,
     joined: joined,

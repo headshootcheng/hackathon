@@ -16,6 +16,7 @@ import Accomodation from './src/society/accomodation'
 import Booking from './src/society/booking'
 
 import Member from './src/society/membership'
+import Payment from './src/society/Payment'
 
 import {joined,record} from './data/data'
 
@@ -32,7 +33,8 @@ const Allpages = createStackNavigator({
   Member:Member,
   Timetable:Timetable,
   Accomodation:Accomodation,
-  Booking:Booking
+  Booking:Booking,
+  Payment:Payment
 },
 {
   initialRouteName:"Login",
